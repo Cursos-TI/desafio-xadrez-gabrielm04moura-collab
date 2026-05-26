@@ -27,5 +27,21 @@ int main() {
         movRainha++;
     } while (movRainha < casasRainha);
 
+    // Cavalo: movimento em "L" - 2 casas para Baixo e 1 casa para Esquerda
+    // Loop externo FOR: controla as 2 casas verticais (Baixo)
+    // Loop interno WHILE: controla a 1 casa horizontal (Esquerda)
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+    printf("\n=== Cavalo (2 casas para Baixo, 1 casa para Esquerda) ===\n");
+    for (int i = 0; i < casasBaixo; i++) {
+        printf("Baixo\n");
+    }
+    int movEsquerda = 0;
+    while (movEsquerda < casasEsquerda) {
+        printf("Esquerda\n");
+        movEsquerda++;
+    }
+
     return 0;
 }
+
